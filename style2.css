@@ -1,0 +1,164 @@
+*, html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+    scroll-behavior: smooth;
+}
+header{
+    background: #554994 ;
+    color: #FFFFFF ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+nav ul{
+    display: flex;
+    padding: 20px;
+    
+}
+li {
+    list-style-type: none;
+    padding: 10px;
+    
+}
+li a{
+    display: block;
+    transition: all .5s ease 0s;
+}
+li a:hover{
+    color: #F675A8 ;
+    transform: rotate(2deg) ;
+}
+
+.logo {
+    margin-right: auto;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all .5s ease 0s;
+}
+.logo:hover {
+    color: #F675A8;
+    transform: rotate(2deg);
+}
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+    
+}
+.btn-tca{
+    margin-right: 10px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 6px 12px;
+    background: #F29393;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0px;
+}
+.intro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; 
+    text-align: center;
+}
+.title{
+    font-size: 24px;
+    font-weight: bold;
+   
+}
+.description{
+    font-size: 28px;
+    font-weight: bolder;
+}
+.img-foto{
+    width: 100%;
+    max-width: 400px;
+    max-height: auto;
+    padding: 10px;
+}
+.parallax{
+    background-image: url('asset/foto/kiki-tiga.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150vh;
+}
+.tentang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #554994;
+    color: #FFFFFF;
+    padding: 20px;
+}
+.mt-10{
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.card-item{
+    text-align: center;
+    width: 25%;
+    background: #FFCCB3;
+    color: #222;
+    padding: 20px;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
+}
+.card-title {
+    font-size: 18px;
+    font-weight: bolder;
+}
+.card-description{
+    font-size: 14px;
+    margin-top: 4pzx;
+}
+.icon{
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    padding: 4px;
+}
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #554994;
+    color: #eaeaea;
+}
+@media screen and (max-width : 500px){
+    .card {
+        flex-direction: column;
+        gap: 0;
+    }
+    .card-item{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    .intro{
+        margin-top: 20px;
+    }
+    .img-foto{
+        padding: 0;
+    }
+    
+}
