@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-expand-lg{
+    background-color:#277BC0;
+    width: 100%;
+    height: 75px;
+}
+
+.collapse {
+    display: inline-block;
+    font-size: 18px;
+    /* margin-left: 1310px; */
+    padding-top: 3px;
+    padding-left: 10px;
+}
+
+.nav-item{
+    padding: 15px;
+}
+
+h3{
+    color: #FFCB42;
+}
+
+h5, p {
+    color : #000;
+    font-size: 20px;
+}
+
+footer{
+    background-color: #1B4C74;
+}
+
+span, h6{
+    color:white;
+}
+
+h2{
+    font-size: 20px;
+    color: #000;
+}
+.logo {
+    margin-left: 20px;
+}
+.listMenu{
+    margin-right: 20px;
+}
