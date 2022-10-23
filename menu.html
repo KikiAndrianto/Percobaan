@@ -4,60 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daftar Dokter</title>
+    <title>List Menu</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.bundle.min.js"></script>
     <script type="js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="dokter.css">
+    <link href="menu.css" rel="stylesheet">
+    
 </head>
 <body>
-    <header>
-      <nav class="navbar navbar-expand-lg"style="background-color: #277BC0;">
-        <div class="container-fluid">
-          <img src="./asset/logoSikat-removebg-preview.png" class="logo" alt="Bootstrap" width="120" height="50">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse Kumenu" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active text-light listMenu" aria-current="page" href="./menu.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active text-light listMenu" aria-current="page" href="./about.html">About</a>
-              </li>
-          </div>
-        </div>
-      </nav>
-    </header>
-
-    <!--Judul atasan-->
-    <div class="container mt-3">
-      <div class="row align-items-center justify-content-between mb-3">
-        <div class="col-4 ms-5">
-          <img src="./asset/Doctor_Isometric (2) 1.png" alt="" width="200">
-        </div>
-
-        <div class="col-5 ms-4" >
-          <h1>Daftar Rekomendasi Dokter</h1>
+  <header>
+    <nav class="navbar navbar-expand-lg"style="background-color: #277BC0;">
+      <div class="container-fluid">
+        <img src="./asset/logoSikat-removebg-preview.png" class="logo" alt="Bootstrap" width="120" height="50">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse Kumenu" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active text-light listMenu" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light listMenu" aria-current="page" href="./about.html">About</a>
+            </li>
         </div>
       </div>
-      </div>
+    </nav>
+  </header>
 
-
-    <!-- Button search-->
-    <form class="d-flex m-5 mt-3 mb-0"role="search" id="form">
-      <input class="form-control me-2 lign-items-center" id="search" type="search"  placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit" id="search">Search</button>
-    </form>
-    <!-- tampilan dokter-->
-    <div id="listDokter" class="d-flex flex-wrap justify-content-beetwen mt-0 content">
-
+    <div class="container-fluid" id="selamat">
+            <h3 class="justify-content-center text-center mt-5">SELAMAT DATANG DI SIKAT</h3>
+            <h3 class="justify-content-center text-center">Salah satu aplikasi rekam medis terbaik di Indonesia</h3>
+    <div class="row row-cols-1 row-cols-md-3 g-3 justify-content-center text-center mt-5 mb-5 ">
+        <div class="col">
+        <div class="card shadow p-3 mb-5 bg-body rounded">
+            <img src="./image/Human profile_Isometric 1.png" class="mx-auto d-block" alt="gambar1" style=" height: 200px; width: 200px;">
+            <div class="card-body">
+            <h5 class="card-title">DATA PASIEN</h5>
+            <p class="card-text">Berisi data pribadi pasien saat akan menjalani pengobatan.</p>
+            <a href="./pasien.html" class="btn btn-primary"><i class="fa fa-sign-in"></i>Klik disini</a>
+            </div>
+        </div>
+        </div>
+        <div class="col">
+        <div class="card shadow p-3 mb-5 bg-body rounded">
+            <img src="./image/doc.png" class="mx-auto d-block" alt="gambar2" style=" height: 200px; width: 200px;">
+            <div class="card-body">
+            <h5 class="card-title">DATA DOKTER</h5>
+            <p class="card-text">Berisi data-data dokter yang terdapat pada suatu instansi kesehatan</p>
+            <a href="./dokter.html" class="btn btn-primary"><i class="fa fa-sign-in"></i>Klik disini</a>
+            </div>
+        </div>
+        </div>
+    </div>
     </div>
 
-    <!-- Footer -->
+     <!-- Footer -->
 <footer class="text-center text-lg-start bg-white text-muted">
   <section class="d-flex justify-content-center justify-content-lg-between p-2 border-bottom" style="background-color: #277BC0;">
     <!-- Left -->
@@ -67,7 +71,7 @@
     <!-- Left -->
 
     <div class="text-center p-3 text-white" style="background-color: rgba(255, 255, 255, 0.025);">
-      © 2022 Copyright:BE-21
+      © 2022 Copyright: BE-21
       <a class="text-reset fw-bold" href="https://mdbootstrap.com/">BE</a>
     </div>
 
@@ -96,7 +100,6 @@
     </div>
   </section>
 </footer>
-<!-- Footer -->
-    <script src="dokter.js"></script>
+
 </body>
 </html>
